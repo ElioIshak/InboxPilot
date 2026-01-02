@@ -20,7 +20,7 @@ The workflow is designed to safely combine AI-based reasoning with explicit cont
 ## Workflow Diagram
 
 The diagram below represents the full workflow exactly as implemented in n8n.
-![Automated Agent Workflow](screenshots/Automated_Agent_WorkFlow.png)
+![Automated Agent Workflow](https://github.com/ElioIshak/Automated-Email-Triage-Agent/blob/main/screenshots/Automated_Agent_WorkFlow.PNG)
 ---
 
 ## Workflow Description

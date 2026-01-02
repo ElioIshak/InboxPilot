@@ -22,7 +22,7 @@
       "name": "Gmail Trigger",
       "credentials": {
         "gmailOAuth2": {
-          "id": "c7mX7rHhK2tINk9x",
+          "id": "QcKqlbGBUdPZxIJl",
           "name": "Gmail account 3"
         }
       }
@@ -113,7 +113,7 @@
       "webhookId": "7f50c876-36ef-4cef-9022-60cd50cb67c1",
       "credentials": {
         "gmailOAuth2": {
-          "id": "c7mX7rHhK2tINk9x",
+          "id": "QcKqlbGBUdPZxIJl",
           "name": "Gmail account 3"
         }
       }
@@ -122,7 +122,7 @@
       "parameters": {
         "modelId": {
           "__rl": true,
-          "value": "gpt-4",
+          "value": "gpt-4.1",
           "mode": "id"
         },
         "responses": {
@@ -301,13 +301,14 @@
       "webhookId": "9a15f133-05bf-47ed-9012-4cbd6c933ffa",
       "credentials": {
         "gmailOAuth2": {
-          "id": "c7mX7rHhK2tINk9x",
+          "id": "QcKqlbGBUdPZxIJl",
           "name": "Gmail account 3"
         }
       }
     },
     {
       "parameters": {
+        "task": "MTMzNDQ3MjcxMTAzODQ2MjY0NzM6MDow",
         "title": "={{$json[\"task\"][\"title\"]}}",
         "additionalFields": {
           "dueDate": "={{$json[\"task\"][\"due_date\"]}}",
@@ -321,7 +322,13 @@
         -32
       ],
       "id": "2d51a139-db90-401f-8168-d0000dd50bde",
-      "name": "Create a task"
+      "name": "Create a task",
+      "credentials": {
+        "googleTasksOAuth2Api": {
+          "id": "Y7AQ2pXPL8CJjHt3",
+          "name": "Google Tasks account"
+        }
+      }
     },
     {
       "parameters": {
@@ -340,7 +347,7 @@
       "webhookId": "07bed52e-0f52-481e-b122-f2e0a7038d3a",
       "credentials": {
         "gmailOAuth2": {
-          "id": "c7mX7rHhK2tINk9x",
+          "id": "QcKqlbGBUdPZxIJl",
           "name": "Gmail account 3"
         }
       }
@@ -362,7 +369,7 @@
       "webhookId": "cdf1d9a8-c799-4669-a881-db90751af0ab",
       "credentials": {
         "gmailOAuth2": {
-          "id": "c7mX7rHhK2tINk9x",
+          "id": "QcKqlbGBUdPZxIJl",
           "name": "Gmail account 3"
         }
       }
@@ -384,7 +391,7 @@
       "webhookId": "cdf1d9a8-c799-4669-a881-db90751af0ab",
       "credentials": {
         "gmailOAuth2": {
-          "id": "c7mX7rHhK2tINk9x",
+          "id": "QcKqlbGBUdPZxIJl",
           "name": "Gmail account 3"
         }
       }
@@ -394,8 +401,9 @@
         "operation": "getAll",
         "calendar": {
           "__rl": true,
+          "value": "elioishak32@gmail.com",
           "mode": "list",
-          "value": ""
+          "cachedResultName": "elioishak32@gmail.com"
         },
         "returnAll": true,
         "timeMin": "={{$json[\"start_iso\"]}}",
@@ -409,7 +417,13 @@
         288
       ],
       "id": "44a4cf4b-44fd-44b0-b563-3e7a9d42de7e",
-      "name": "Get many events"
+      "name": "Get many events",
+      "credentials": {
+        "googleCalendarOAuth2Api": {
+          "id": "oFMf6UYr7xY3WShZ",
+          "name": "Google Calendar account"
+        }
+      }
     },
     {
       "parameters": {
@@ -491,8 +505,9 @@
       "parameters": {
         "calendar": {
           "__rl": true,
+          "value": "elioishak32@gmail.com",
           "mode": "list",
-          "value": ""
+          "cachedResultName": "elioishak32@gmail.com"
         },
         "start": "={{$json[\"valid_start\"]}}",
         "end": "={{$json[\"valid_end\"]}}",
@@ -505,7 +520,13 @@
         288
       ],
       "id": "f4cbe821-9dde-48ec-9380-82c4560420bc",
-      "name": "Create an event"
+      "name": "Create an event",
+      "credentials": {
+        "googleCalendarOAuth2Api": {
+          "id": "oFMf6UYr7xY3WShZ",
+          "name": "Google Calendar account"
+        }
+      }
     },
     {
       "parameters": {
@@ -527,13 +548,53 @@
       "webhookId": "d7433940-16d5-4941-a1b9-22b87b9236ed",
       "credentials": {
         "gmailOAuth2": {
-          "id": "c7mX7rHhK2tINk9x",
+          "id": "QcKqlbGBUdPZxIJl",
           "name": "Gmail account 3"
         }
       }
     }
   ],
-  "pinData": {},
+  "pinData": {
+    "Gmail Trigger": [
+      {
+        "json": {
+          "id": "19b2dcde8841480a",
+          "threadId": "19b2dcbad6b58785",
+          "snippet": "This is a reminder that you need to confirm your course registration before the end of the week.",
+          "payload": {
+            "mimeType": "multipart/alternative"
+          },
+          "sizeEstimate": 799,
+          "historyId": "2002",
+          "internalDate": "1766000027000",
+          "labels": [
+            {
+              "id": "SENT",
+              "name": "SENT"
+            },
+            {
+              "id": "INBOX",
+              "name": "INBOX"
+            },
+            {
+              "id": "IMPORTANT",
+              "name": "IMPORTANT"
+            },
+            {
+              "id": "UNREAD",
+              "name": "UNREAD"
+            }
+          ],
+          "Subject": "InboxPilot Testing (1)",
+          "From": "Elio <elioishak32@gmail.com>",
+          "To": "Elio <elioishak32@gmail.com>"
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ]
+  },
   "connections": {
     "Gmail Trigger": {
       "main": [
@@ -708,7 +769,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "bcad55c6-fad4-403b-aad6-00e73715c95e",
+  "versionId": "0c56b2f0-5beb-465d-9e4c-01ba3c2271b7",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "7bbbf46b0ca8e99bd24536151788aa03d3823fa3c229a70c7f79cba1c300c0a3"

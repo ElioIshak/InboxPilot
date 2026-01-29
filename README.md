@@ -1,7 +1,7 @@
-# Automated Agent WorkFlow
+# InboxPilot - Automated Agent WorkFlow
 
 ---
-**Project Name:** Automated Agent WorkFlow  
+**Project Name:** InboxPilot
 **Start Date:** Dec 2025  
 **Last Updated:** Jan 2026  
 **Author:** Elio (CS student at AUB)
